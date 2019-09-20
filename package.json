@@ -61,6 +61,7 @@
     "dropzone": "^5.5.1",
     "fullcalendar": "^3.10.0",
     "gmaps": "^0.4.24",
+    "gulp": "^4.0.1",
     "handlebars": "^4.1.2",
     "jquery": ">=3.4.0",
     "jquery-datatables-checkboxes": "1.2.11",
