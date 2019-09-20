@@ -12,6 +12,10 @@
         this.charts = []
     };
 
+    var yLabels = {
+        18: 'Level 1', 36 : 'Level 2', 54 : 'Level 3'
+    }
+
     Dashboard.prototype.respChart = function(selector,type,data, options) {
         var draw = Chart.controllers.line.prototype.draw;
         Chart.controllers.line.prototype.draw = function () {
@@ -107,6 +111,7 @@
     // init various charts and returns
     Dashboard.prototype.initCharts = function() {
         var charts = [];
+        
         if ($('#revenue-chart').length > 0) {
             var lineChart = {
                 labels: ["Mon", "Tue", "Wed", "Thu", "Fri", "Sat", "Sun"],
@@ -172,28 +177,28 @@
             // create gradient
             var ctx = document.getElementById('high-performing-product').getContext("2d");
             var gradientStroke = ctx.createLinearGradient(0, 500, 0, 150);
-            gradientStroke.addColorStop(0, "#fa5c7c");
-            gradientStroke.addColorStop(1, "#727cf5");
+            gradientStroke.addColorStop(0, 'rgba(22,134,180,1.0)');
+            gradientStroke.addColorStop(1, 'rgba(22,134,180,1.0)');
 
             var barChart = {
-                // labels: ["01", "02", "03", "04", "05", "06", "07", "08", "09", "10", "11", "12"],
-                labels: ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"],
+                // labels: ["01", "02", "03", "04", "05", "06"],
+                labels: ["Neck", "Shoulders", "Trunk", "Hips", "Legs", "Ankles"],
                 datasets: [
                     {
-                        label: "Sales Analytics",
-                        backgroundColor: gradientStroke,
-                        borderColor: gradientStroke,
-                        hoverBackgroundColor: gradientStroke,
-                        hoverBorderColor: gradientStroke,
-                        data: [65, 59, 80, 81, 56, 89, 40, 32, 65, 59, 80, 81]
+                        label: "Core | 6 Level",
+                        backgroundColor: 'rgba(22,134,180,1.0)',
+                        borderColor: 'rgba(22,134,180,1.0)',
+                        hoverBackgroundColor: 'rgba(22,134,180,1.0)',
+                        hoverBorderColor: 'rgba(22,134,180,1.0)',
+                        data: [23, 26, 30, 32, 34, 28]
                     },
                     {
-                        label: "Dollar Rate",
-                        backgroundColor: "#e3eaef",
-                        borderColor: "#e3eaef",
-                        hoverBackgroundColor: "#e3eaef",
-                        hoverBorderColor: "#e3eaef",
-                        data: [89, 40, 32, 65, 59, 80, 81, 56, 89, 40, 65, 59]
+                        label: "Today's Session Effort",
+                        backgroundColor: 'rgba(160,101,9, 0.8)',
+                        borderColor: 'rgba(160,101,9, 0.8)',
+                        hoverBackgroundColor: 'rgba(160,101,9, 0.8)',
+                        hoverBorderColor: 'rgba(160,101,9, 0.8)',
+                        data: [18, 18, 18, 18, 18, 18]
                     }
                 ]
             };
@@ -203,22 +208,29 @@
                     display: false
                 },
                 tooltips: {
-                    backgroundColor: '#727cf5',
-                    titleFontColor: '#fff',
-                    bodyFontColor: '#fff',
+                    backgroundColor: '#FFF',
+                    titleFontColor: 'black',
+                    bodyFontColor: 'grey',
                     bodyFontSize: 14,
-                    displayColors: false
+                    displayColors: true
                 },
                 scales: {
                     yAxes: [{
                         gridLines: {
-                            display: false,
+                            display: true,
                             color: "rgba(0,0,0,0.05)"
                         },
                         stacked: false,
                         ticks: {
-                            stepSize: 20
+                            min: 0,
+                            max: 54,
+                            stepSize: 18,
+                            callback: function(value, index, values) {
+                              // for a value (tick) equals to 8
+                              return yLabels[value];
+                              // 'junior-dev' will be returned instead and displayed on your chart
                         }
+                    },
                     }],
                     xAxes: [{
                         barPercentage: 0.7,
@@ -228,7 +240,10 @@
                             color: "rgba(0,0,0,0.01)"
                         }
                     }]
-                }
+                },
+                legend: {
+                    position: 'bottom'
+                },
             };
 
             charts.push(this.respChart($("#high-performing-product"), 'Bar', barChart, barOpts));
