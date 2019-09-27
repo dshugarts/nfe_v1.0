@@ -22,7 +22,6 @@ var folder = {
 
 /*
 Copy assets/vendors from their node_module package to scss & js folder
-Read More: https://florian.ec/articles/frontend-dependencies-npm/
 */
 
 function copyAssets (done) {
