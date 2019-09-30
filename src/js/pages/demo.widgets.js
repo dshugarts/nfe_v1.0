@@ -144,7 +144,7 @@ $(document).ready(function () {
     // Other Sparkline
 
 
-    var spark1 = {
+    var sparkNeck = {
         chart: {
             type: 'line',
             height: 100,
@@ -153,7 +153,7 @@ $(document).ready(function () {
             },
         },
         series: [{
-            data: [25, 66, 41, 59, 25, 44, 12, 36, 9, 21]
+            data: [16, 18, 21, 29, 31, 41]
         }],
         stroke: {
             width: 4,
@@ -162,7 +162,7 @@ $(document).ready(function () {
         markers: {
             size: 0
         },
-        colors: ['#734CEA']
+        colors: ['#1686B4']
     }
 
     var spark2 = {
@@ -235,10 +235,120 @@ $(document).ready(function () {
         colors: ['#00c5dc']
     }
 
-    new ApexCharts(document.querySelector("#spark1"), spark1).render();
-    new ApexCharts(document.querySelector("#spark2"), spark2).render();
+    var sparkShoulders = {
+        chart: {
+            type: 'line',
+            height: 100,
+            sparkline: {
+                enabled: true
+            },
+        },
+        series: [{
+            data: [12, 20, 27, 21, 23, 36]
+        }],
+        stroke: {
+            width: 4,
+            curve: 'smooth'
+        },
+        markers: {
+            size: 0
+        },
+        colors: ['#1686B4']
+    }
+
+    var sparkTrunk = {
+        chart: {
+            type: 'line',
+            height: 100,
+            sparkline: {
+                enabled: true
+            },
+        },
+        series: [{
+            data: [19, 20, 26, 32, 38, 29]
+        }],
+        stroke: {
+            width: 4,
+            curve: 'smooth'
+        },
+        markers: {
+            size: 0
+        },
+        colors: ['#1686B4']
+    }
+
+    var sparkHips = {
+        chart: {
+            type: 'line',
+            height: 100,
+            sparkline: {
+                enabled: true
+            },
+        },
+        series: [{
+            data: [15, 25, 27, 33, 39, 39]
+        }],
+        stroke: {
+            width: 4,
+            curve: 'smooth'
+        },
+        markers: {
+            size: 0
+        },
+        colors: ['#1686B4']
+    }
+
+    var sparkLegs = {
+        chart: {
+            type: 'line',
+            height: 100,
+            sparkline: {
+                enabled: true
+            },
+        },
+        series: [{
+            data: [18, 30, 27, 42, 40, 48]
+        }],
+        stroke: {
+            width: 4,
+            curve: 'smooth'
+        },
+        markers: {
+            size: 0
+        },
+        colors: ['#1686B4']
+    }
+
+    var sparkAnkles = {
+        chart: {
+            type: 'line',
+            height: 100,
+            sparkline: {
+                enabled: true
+            },
+        },
+        series: [{
+            data: [22, 36, 37, 42, 44, 50]
+        }],
+        stroke: {
+            width: 4,
+            curve: 'smooth'
+        },
+        markers: {
+            size: 0
+        },
+        colors: ['#1686B4']
+    }
+
+    new ApexCharts(document.querySelector("#sparkNeck"), sparkNeck).render();
+    new ApexCharts(document.querySelector("#sparkShoulders"), sparkShoulders).render();
+    new ApexCharts(document.querySelector("#sparkTrunk"), sparkTrunk).render();
+    new ApexCharts(document.querySelector("#sparkHips"), sparkHips).render();
+    new ApexCharts(document.querySelector("#sparkLegs"), sparkLegs).render();
+    new ApexCharts(document.querySelector("#sparkAnkles"), sparkAnkles).render();
     new ApexCharts(document.querySelector("#spark3"), spark3).render();
     new ApexCharts(document.querySelector("#spark4"), spark4).render();
+    new ApexCharts(document.querySelector("#spark10"), spark10).render();
 });
 
 
