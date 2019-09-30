@@ -77,21 +77,24 @@ var options = {
             colors: ['#fff']
         }
     },
-    colors: ["#fa5c7c", "#6c757d"],
+    colors: ["#C0C0C0", "#FFA500", "#0000ff"],
     stroke: {
         show: true,
         width: 1,
         colors: ['#fff']
     },
     series: [{
-        name: 'Series 1',
-        data: [44, 55, 41, 64, 22, 43, 21]
+        name: 'Metabolic',
+        data: [36, 36, 36, 36, 36, 36]
     },{
-        name: 'Series 2',
-        data: [53, 32, 33, 52, 13, 44, 32]
+        name: 'Neurologic',
+        data: [54, 54, 54, 36, 54, 54]
+    },{
+        name: 'Mechanical',
+        data: [18, 18, 18, 36, 18, 18]
     }],
     xaxis: {
-        categories: [2001, 2002, 2003, 2004, 2005, 2006, 2007],
+        categories: ["Neck", "Shoulders", "Trunk", "Hips", "Legs", "Ankles"],
     },
     legend: {
         offsetY: -10,
