@@ -23,37 +23,37 @@
         this.$todoData = [
         {
             'id': '1',
-            'text': 'Design One page theme',
+            'text': 'Complete Core | 6 Assessment',
             'done': false
         },
         {
             'id': '2',
-            'text': 'Build a js based app',
+            'text': 'Create Mind Body Account',
             'done': true
         },
         {
             'id': '3',
-            'text': 'Creating component page',
+            'text': 'Schedule Initial Session',
             'done': true
         },
         {
             'id': '4',
-            'text': 'Testing??',
+            'text': 'Create Fluid User Account',
             'done': true
         },
         {
             'id': '5',
-            'text': 'Hehe!! This looks cool!',
+            'text': 'Complete Nutrition Questionnaire',
             'done': false
         },
         {
             'id': '6',
-            'text': 'Create new version 3.0',
+            'text': 'Complete Cardiovascular Assessment',
             'done': false
         },
         {
             'id': '7',
-            'text': 'Build an angular app',
+            'text': 'Complete Behavior Questionnaire',
             'done': true
         }];
 
@@ -75,6 +75,7 @@
         //regenerate list
         this.generate();
     },
+    
     //Archives the completed todos
     TodoApp.prototype.archives = function() {
     	this.$todoUnCompletedData = [];
@@ -95,7 +96,7 @@
     //Generates todos
     TodoApp.prototype.generate = function() {
         //clear list
-        this.$todoList.html("");
+        this.$todoList.html(" ");
         var remaining = 0;
         for(var count=0; count<this.$todoData.length;count++) {
             //geretaing html
