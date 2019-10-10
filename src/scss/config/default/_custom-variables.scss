@@ -7,10 +7,10 @@ $shadow:                            0px 0px 35px 0px rgba(154, 161, 171, 0.15);
 $shadow-lg:                         0 0 45px 0 rgba(0, 0, 0, 0.12);
 
 // Background left-sidebar
-$bg-leftbar:                        linear-gradient(135deg, #8f75da 0%, #727cf5 60%);
+$bg-leftbar:                        linear-gradient(135deg, #8f75da 0%, #1686b4 60%);
 $bg-leftbar-light:                #ffffff;
 $bg-leftbar-dark:                 #313a46;
-$bg-topnav:                         linear-gradient(to bottom, #8f75da, #727cf5);
+$bg-topnav:                         linear-gradient(to bottom, #8f75da, #1686b4);
 
 // Deatched left sidenav
 $bg-detached-leftbar:             #ffffff;
@@ -32,13 +32,13 @@ $menu-item-active:                #ffffff;
 
 // Menu item colors (light)
 $menu-item-light:                 #6c757d;
-$menu-item-light-hover:           #727cf5;
-$menu-item-light-active:          #727cf5;
+$menu-item-light-hover:           #1686b4;
+$menu-item-light-active:          #1686b4;
 
 // Detached Menu item colors
 $menu-item-dark:                  #6c757d;
-$menu-item-dark-hover:            #727cf5;
-$menu-item-dark-active:           #727cf5;
+$menu-item-dark-hover:            #1686b4;
+$menu-item-dark-active:           #1686b4;
 
 // Dark sidenav Menu item color
 $sidebar-dark-menu-item:          #8391a2;
