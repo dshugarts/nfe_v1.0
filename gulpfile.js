@@ -261,7 +261,7 @@ function javascript() {
             folder.src + "js/vendor/jquery.bootstrap-touchspin.min.js",
             folder.src + "js/vendor/bootstrap-maxlength.min.js",
             folder.src + "js/vendor/bootstrap-datepicker.min.js",
-            folder.src + "js/hyper.js"
+            folder.src + "js/formatting.js"
         ])
         .pipe(sourcemaps.init())
         .pipe(concat("app.js"))

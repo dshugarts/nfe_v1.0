@@ -1,10 +1,3 @@
-/**
- * Theme: Hyper - Responsive Bootstrap 4 Admin Dashboard
- * Author: Coderthemes
- * Module/App: Main Js
- */
-
-
 !function($) {
     "use strict";
 
