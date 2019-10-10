@@ -1,16 +1,16 @@
 {
-  "name": "hyper",
-  "version": "1.6.0",
-  "description": "Fully responsive web application ui kit",
+  "name": "fluid",
+  "version": "1.0.0",
+  "description": "Fluid Health and Fitness",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node app",
     "postinstall": "gulp default"
   },
-  "author": "coderthemes",
+  "author": "Fluid Health and Fitness",
   "repository": {
-    "url": "http://coderthemes.com/hyper"
+    "url": "http://fluidhealthandfitness.com"
   },
   "private": true,
   "devDependencies": {
