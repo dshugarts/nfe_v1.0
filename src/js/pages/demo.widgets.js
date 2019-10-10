@@ -346,9 +346,7 @@ $(document).ready(function () {
     new ApexCharts(document.querySelector("#sparkHips"), sparkHips).render();
     new ApexCharts(document.querySelector("#sparkLegs"), sparkLegs).render();
     new ApexCharts(document.querySelector("#sparkAnkles"), sparkAnkles).render();
-    new ApexCharts(document.querySelector("#spark3"), spark3).render();
-    new ApexCharts(document.querySelector("#spark4"), spark4).render();
-    new ApexCharts(document.querySelector("#spark10"), spark10).render();
+  
 });
 
 
