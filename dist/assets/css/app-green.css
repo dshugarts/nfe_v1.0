@@ -8152,7 +8152,7 @@ body {
   -webkit-transition: all 0.4s;
   transition: all 0.4s; }
   .side-nav .side-nav-link:hover, .side-nav .side-nav-link:focus, .side-nav .side-nav-link:active {
-    color: #ffffff;
+    color: #1686b4;
     text-decoration: none; }
   .side-nav .side-nav-link span {
     vertical-align: middle; }
