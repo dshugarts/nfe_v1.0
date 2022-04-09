@@ -86,7 +86,7 @@
     "jqvmap": "^1.5.1",
     "js-yaml": ">=3.13.1",
     "metismenu": "^3.0.4",
-    "moment": "^2.24.0",
+    "moment": "^2.29.2",
     "popper.js": "^1.15.0",
     "sass-lint": "^1.13.1",
     "select2": "^4.0.10",
